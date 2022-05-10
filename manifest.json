@@ -1,0 +1,13 @@
+{
+    "name": "Feedback Automator",
+    "version": "0.1.2",
+    "manifest_version": 3,
+    "permissions": ["activeTab"],
+    "icons": {
+        "64": "./icons/fb.png"
+    },
+    "content_scripts": [{
+        "matches": ["https://gateway.iitj.ac.in/proxy/*"],
+        "js": ["/script.js"]
+    }]
+}
